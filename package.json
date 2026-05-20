@@ -1,0 +1,20 @@
+{
+  "name": "levonwb-partner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Премиальный лендинг операционного партнера Wildberries для запуска рекламы.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node -e \"console.log('Static landing is ready for Vercel')\"",
+    "check": "node --check script.js"
+  },
+  "keywords": [
+    "wildberries",
+    "landing",
+    "marketplace",
+    "levonwb-partner"
+  ],
+  "author": "Левон Степанян",
+  "license": "UNLICENSED"
+}
