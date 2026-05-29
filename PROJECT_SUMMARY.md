@@ -1230,3 +1230,74 @@ Verification:
 - Hero contains only one main button: `Написать в Telegram`.
 - Hero quick buttons count: 3.
 - Form quick buttons count: 3.
+
+### Telegram UTM Notification Update - 2026-05-29
+
+User requested that all visitor UTM tags be saved and sent to Telegram in a readable format.
+
+Existing frontend behavior:
+
+- `script.js` captures UTM tags from the landing page URL;
+- stores them in `sessionStorage` under `levonwb_utm`;
+- passes saved UTM tags with the form payload to `/api/telegram`.
+
+Updated backend behavior in `api/telegram.js`:
+
+- Telegram notification now includes:
+  - `Источник: <utm_source or не передан>`;
+  - `Канал: <utm_medium or не передан>`;
+  - `Кампания: <utm_campaign or не передан>`;
+  - `Контент: <utm_content or не передан>`.
+- Example URL:
+  `?utm_source=instagram&utm_medium=bio`
+- Example Telegram output:
+  - `Источник: instagram`;
+  - `Канал: bio`;
+  - `Кампания: не передан`;
+  - `Контент: не передан`.
+
+Verification:
+
+- `api/telegram.js` test with mocked Telegram fetch returned `200 {"ok":true}`;
+- generated Telegram text contained `Источник: instagram` and `Канал: bio`;
+- missing `utm_campaign` and `utm_content` appeared as `не передан`;
+- `node --check api/telegram.js` passed;
+- `node --check script.js` passed;
+- direct Vercel build command prints `Static landing is ready for Vercel`.
+
+### Final GitHub ZIP Update - 2026-05-29
+
+User requested one final ZIP for uploading the project to GitHub, with these changes:
+
+- add Instagram next to Telegram / WhatsApp / MAX on the hero screen;
+- add Instagram to the lower contact block after the form;
+- Instagram link corrected by the user to:
+  `https://www.instagram.com/spartanec_wb?igsh=ZTFmcDhta284ZXRy&utm_source=qr`;
+- add a trust block under `Написать в Telegram` and above quick contacts:
+  - `5+ лет` / `на Wildberries`;
+  - `90+ млн ₽` / `заказов за 3 месяца в одном из проектов`;
+  - `От аналитики` / `до масштабирования продаж`;
+- update Telegram notification format:
+  - `🔥 Новая заявка`;
+  - `👤 Имя`;
+  - `📱 Контакт`;
+  - `📦 Проект`;
+  - `📍 Источник`;
+  - readable UTM fields: `Источник`, `Канал`, `Кампания`, `Контент`.
+
+Files changed for this update:
+
+- `index.html`;
+- `styles.css`;
+- `api/telegram.js`;
+- `PROJECT_SUMMARY.md`.
+
+Verification for this update:
+
+- Instagram appears in hero quick contacts and form quick contacts;
+- Instagram href uses the corrected `spartanec_wb` URL;
+- hero still contains one main CTA: `Написать в Telegram`;
+- trust block contains 3 cards;
+- browser check at 390 and 1280 widths found no horizontal overflow;
+- browser console errors: none found during check;
+- Telegram notification mock returned `200 {"ok":true}` with the new readable format.

@@ -31,27 +31,36 @@ const sendJson = (res, status, payload) => {
 };
 
 const sanitize = (value) => String(value || "").trim().slice(0, MAX_FIELD_LENGTH);
+const formatUtmValue = (value) => sanitize(value) || "не передан";
 
 const formatUtm = (utm = {}) => {
-  const entries = Object.entries(utm).filter(([, value]) => value);
+  const labels = [
+    ["Источник", "utm_source"],
+    ["Канал", "utm_medium"],
+    ["Кампания", "utm_campaign"],
+    ["Контент", "utm_content"],
+  ];
 
-  if (!entries.length) return "UTM: не переданы";
-
-  return `UTM:\n${entries.map(([key, value]) => `- ${key}: ${sanitize(value)}`).join("\n")}`;
+  return labels.map(([label, key]) => `${label}: ${formatUtmValue(utm[key])}`).join("\n");
 };
 
 const buildTelegramMessage = ({ name, contact, message, page, utm }) =>
   [
-    "Новая заявка с сайта levonwb-partner",
+    "🔥 Новая заявка",
     "",
-    `Имя: ${sanitize(name)}`,
-    `Контакт: ${sanitize(contact)}`,
+    "👤 Имя",
+    sanitize(name),
     "",
-    "Проект:",
+    "📱 Контакт",
+    sanitize(contact),
+    "",
+    "📦 Проект",
     sanitize(message),
     "",
-    `Страница: ${sanitize(page)}`,
+    "📍 Источник",
+    sanitize(page),
     "",
+    "UTM-метки:",
     formatUtm(utm),
   ].join("\n");
 

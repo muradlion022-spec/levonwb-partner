@@ -264,6 +264,45 @@ h1 {
     inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 
+.hero-trust {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 720px;
+  margin-top: 18px;
+}
+
+.trust-card {
+  min-height: 86px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 18px 44px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.trust-card strong,
+.trust-card span {
+  display: block;
+}
+
+.trust-card strong {
+  color: var(--white);
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.trust-card span {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .button {
   display: inline-flex;
   min-height: 56px;
@@ -298,26 +337,6 @@ h1 {
   color: var(--white);
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
-}
-
-.hero-proof {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-.hero-proof span {
-  display: inline-flex;
-  min-height: 36px;
-  align-items: center;
-  padding: 0 14px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-  color: rgba(255, 255, 255, 0.76);
-  background: rgba(255, 255, 255, 0.06);
-  font-size: 13px;
-  font-weight: 800;
 }
 
 .portrait-card {
@@ -1264,6 +1283,11 @@ textarea {
     font-size: 50px;
   }
 
+  .hero-trust {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+
   .portrait-card {
     justify-self: start;
     width: min(330px, 100%);
@@ -1358,6 +1382,24 @@ textarea {
 
   .hero-actions,
   .button {
+    width: 100%;
+  }
+
+  .hero-trust {
+    gap: 8px;
+  }
+
+  .trust-card {
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .quick-contact-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-contact-link {
     width: 100%;
   }
 
