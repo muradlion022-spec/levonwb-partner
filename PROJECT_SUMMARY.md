@@ -1115,3 +1115,118 @@ Remaining non-critical notes:
 - `vercel` CLI is not installed on the current machine, so a real CLI deployment was not executed;
 - actual analytics IDs are still placeholders and must be inserted before paid traffic if tracking is required;
 - original large source files remain in `assets/` as unused references: `wb-sales-hero.png` and `levon-portrait.png`.
+
+### Working Telegram Contact Form - 2026-05-28
+
+User requested that the visual contact form become a real working lead form and send applications to Telegram.
+
+Implemented files:
+
+- `index.html`
+  - contact form now posts to `/api/telegram`;
+  - fields `Имя`, `Контакт`, `Проект` are required;
+  - visible action is now a real submit button: `Оставить заявку`;
+  - reserve Telegram link remains in the form note;
+  - form has live status output through `data-form-status`.
+- `script.js`
+  - intercepts form submit;
+  - sends JSON through `fetch()` to `/api/telegram`;
+  - includes `name`, `contact`, `message`, current page URL, and saved UTM tags;
+  - disables the submit button while sending;
+  - on success shows: `Спасибо! Заявка отправлена, я скоро свяжусь с вами.`;
+  - on error shows: `Не удалось отправить заявку. Напишите мне напрямую в Telegram.`;
+  - after successful send calls Yandex Metrica goal:
+    `ym(109329838, "reachGoal", "form_submit")`;
+  - keeps all direct Telegram buttons as backup.
+- `api/telegram.js`
+  - new Vercel-compatible serverless endpoint;
+  - accepts only `POST`;
+  - reads environment variables:
+    - `TELEGRAM_BOT_TOKEN`;
+    - `TELEGRAM_CHAT_ID`;
+  - does not store Telegram token in public code;
+  - validates required fields;
+  - sends formatted message to Telegram through `https://api.telegram.org/bot<TOKEN>/sendMessage`;
+  - returns JSON success/error responses.
+- `server.js`
+  - local development server now routes `/api/telegram` to the same handler for local checks.
+- `styles.css`
+  - added form status styling;
+  - disabled submit button styling;
+  - form note Telegram link styling.
+- `DEPLOY.md`
+  - updated with instructions for creating Telegram bot through `@BotFather`;
+  - explains where to get `TELEGRAM_BOT_TOKEN`;
+  - explains how to get `TELEGRAM_CHAT_ID` through `getUpdates`;
+  - explains where to add environment variables in Vercel:
+    `Project -> Settings -> Environment Variables`;
+  - explains that the project must be redeployed after adding variables.
+
+Important environment setup:
+
+- On Vercel, add:
+  - `TELEGRAM_BOT_TOKEN = token from BotFather`;
+  - `TELEGRAM_CHAT_ID = personal or group chat id`.
+- Without these variables, the form intentionally returns an error, and the user sees the Telegram fallback message.
+
+Security decision:
+
+- Telegram bot token is not stored in `index.html`, `script.js`, or any public frontend code.
+- Token must only live in Vercel Environment Variables.
+
+Testing expectations:
+
+- Local test without Telegram variables should show the error message.
+- Full successful Telegram delivery requires real `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`.
+
+### Contact Channels Update - 2026-05-29
+
+User requested additional contact methods and CTA cleanup.
+
+Implemented:
+
+- Header CTA remains `Обсудить партнёрство`.
+- Header CTA is now the main red gradient CTA with premium hover animation and adaptive sizing.
+- Hero block:
+  - removed lower duplicate `Обсудить партнёрство` button;
+  - kept only the main button `Написать в Telegram`;
+  - added compact line: `Также можно связаться через:`;
+  - added quick contact buttons:
+    - `Telegram` -> `https://t.me/levon_stepanian`;
+    - `WhatsApp` -> `https://wa.me/79283222448`;
+    - `MAX` -> `https://max.ru/u/f9LHodD0cOImftilzkCl4kAeStuy19clTRT-OfiR8N3evEhlv8ZSIie6VrY`.
+- Contact section:
+  - existing contact form remains working through `/api/telegram`;
+  - after the form, added quick contact buttons:
+    - `Telegram`;
+    - `WhatsApp`;
+    - `MAX`;
+  - direct Telegram fallback remains in form note.
+- Yandex Metrica click goals:
+  - Telegram links use `telegram_click`;
+  - WhatsApp links use `whatsapp_click`;
+  - MAX links use `max_click`;
+  - implementation uses guarded inline handlers such as:
+    `window.ym&&ym(109329838,'reachGoal','telegram_click')`
+    so links still open even if Yandex Metrica has not loaded yet.
+
+Design decisions:
+
+- Quick contact buttons use compact pill styling.
+- Hero quick links use dark glass/premium style.
+- Form quick links use light premium style matching the contact card.
+- All quick links open in a new tab on desktop through `target="_blank"` and use regular HTTPS mobile deep links for app handoff on iPhone/Android.
+
+Verification:
+
+- `node --check script.js` passed.
+- `node --check server.js` passed.
+- `node --check api/telegram.js` passed.
+- `package.json` and `vercel.json` are valid JSON.
+- Direct Vercel build command prints `Static landing is ready for Vercel`.
+- Browser check at 320, 390, 768, and 1280 widths found no horizontal overflow.
+- Console errors: none found in browser check.
+- Header CTA text and gradient style verified.
+- Hero contains only one main button: `Написать в Telegram`.
+- Hero quick buttons count: 3.
+- Form quick buttons count: 3.

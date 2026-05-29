@@ -1,20 +1,6 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta name="yandex-verification" content="6976a2f1e13b6aa8" />
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109329838', 'ym');
-
-    ym(109329838, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/109329838" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Операционный партнёр Wildberries | Рост продаж и управление проектом</title>
@@ -63,7 +49,13 @@
         <a href="#results">Результаты</a>
         <a href="#contact">Контакты</a>
       </nav>
-      <a class="header-action" href="https://t.me/levon_stepanian" target="_blank" rel="noopener" onclick="ym(109329838,'reachGoal','telegram_click')" >Обсудить партнёрство</a>
+      <a
+        class="header-action"
+        href="https://t.me/levon_stepanian"
+        target="_blank"
+        rel="noopener"
+        onclick="window.ym&&ym(109329838,'reachGoal','telegram_click')"
+      >Обсудить партнёрство</a>
     </header>
 
     <main id="top">
@@ -84,8 +76,39 @@
               рекламу, аналитику, гипотезы и ежедневные решения по росту.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="https://t.me/levon_stepanian" target="_blank" rel="noopener" onclick="ym(109329838,'reachGoal','telegram_click')" >Обсудить партнёрство</a>
-              <a class="button secondary" href="https://t.me/levon_stepanian" target="_blank" rel="noopener" onclick="ym(109329838,'reachGoal','telegram_click')" >Написать в Telegram</a>
+              <a
+                class="button primary"
+                href="https://t.me/levon_stepanian"
+                target="_blank"
+                rel="noopener"
+                onclick="window.ym&&ym(109329838,'reachGoal','telegram_click')"
+              >Написать в Telegram</a>
+            </div>
+            <div class="quick-contact hero-contact" aria-label="Быстрые способы связи">
+              <span>Также можно связаться через:</span>
+              <div class="quick-contact-list">
+                <a
+                  class="quick-contact-link"
+                  href="https://t.me/levon_stepanian"
+                  target="_blank"
+                  rel="noopener"
+                  onclick="window.ym&&ym(109329838,'reachGoal','telegram_click')"
+                >Telegram</a>
+                <a
+                  class="quick-contact-link"
+                  href="https://wa.me/79283222448"
+                  target="_blank"
+                  rel="noopener"
+                  onclick="window.ym&&ym(109329838,'reachGoal','whatsapp_click')"
+                >WhatsApp</a>
+                <a
+                  class="quick-contact-link"
+                  href="https://max.ru/u/f9LHodD0cOImftilzkCl4kAeStuy19clTRT-OfiR8N3evEhlv8ZSIie6VrY"
+                  target="_blank"
+                  rel="noopener"
+                  onclick="window.ym&&ym(109329838,'reachGoal','max_click')"
+                >MAX</a>
+              </div>
             </div>
             <div class="hero-proof" aria-label="Ключевой фокус">
               <span>Стратегия</span>
@@ -531,7 +554,12 @@
             стадии сейчас проект. Я посмотрю, как можно зайти в развитие продаж на Wildberries.
           </p>
           <div class="contact-links">
-            <a href="https://t.me/levon_stepanian" target="_blank" rel="noopener">
+            <a
+              href="https://t.me/levon_stepanian"
+              target="_blank"
+              rel="noopener"
+              onclick="window.ym&&ym(109329838,'reachGoal','telegram_click')"
+            >
               <span class="contact-icon">T</span>
               <span>Telegram: @levon_stepanian</span>
             </a>
@@ -545,24 +573,65 @@
             </a>
           </div>
           <div class="contact-actions">
-            <a class="button primary" href="https://t.me/levon_stepanian" target="_blank" rel="noopener" onclick="ym(109329838,'reachGoal','telegram_click')">Связаться</a>
+            <a
+              class="button primary"
+              href="https://t.me/levon_stepanian"
+              target="_blank"
+              rel="noopener"
+              onclick="window.ym&&ym(109329838,'reachGoal','telegram_click')"
+            >Связаться</a>
           </div>
         </div>
-        <form class="contact-form" action="mailto:stepanianlevon022@mail.ru" method="post" enctype="text/plain">
+        <form class="contact-form" action="/api/telegram" method="post" data-contact-form>
           <label>
             Имя
-            <input type="text" name="name" placeholder="Как к вам обращаться" />
+            <input type="text" name="name" placeholder="Как к вам обращаться" required />
           </label>
           <label>
             Контакт
-            <input type="text" name="contact" placeholder="Телефон или Telegram" />
+            <input type="text" name="contact" placeholder="Телефон или Telegram" required />
           </label>
           <label>
             Проект
-            <textarea name="message" rows="5" placeholder="Коротко опишите товар, бренд или магазин"></textarea>
+            <textarea name="message" rows="5" placeholder="Коротко опишите товар, бренд или магазин" required></textarea>
           </label>
-          <a class="button primary form-submit-link" href="https://t.me/levon_stepanian" target="_blank" rel="noopener" onclick="ym(109329838,'reachGoal','telegram_click')">Оставить заявку</a>
-          <p class="form-note">Кнопка откроет Telegram, чтобы обсудить проект напрямую.</p>
+          <button class="button primary form-submit-link" type="submit" data-form-submit>Оставить заявку</button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+          <p class="form-note">
+            Если форма не отправится, напишите напрямую:
+            <a
+              href="https://t.me/levon_stepanian"
+              target="_blank"
+              rel="noopener"
+              onclick="window.ym&&ym(109329838,'reachGoal','telegram_click')"
+            >@levon_stepanian</a>
+          </p>
+          <div class="quick-contact form-contact" aria-label="Быстрые способы связи после формы">
+            <span>Быстрая связь:</span>
+            <div class="quick-contact-list">
+              <a
+                class="quick-contact-link"
+                href="https://t.me/levon_stepanian"
+                target="_blank"
+                rel="noopener"
+                onclick="window.ym&&ym(109329838,'reachGoal','telegram_click')"
+              >Telegram</a>
+              <a
+                class="quick-contact-link"
+                href="https://wa.me/79283222448"
+                target="_blank"
+                rel="noopener"
+                onclick="window.ym&&ym(109329838,'reachGoal','whatsapp_click')"
+              >WhatsApp</a>
+              <a
+                class="quick-contact-link"
+                href="https://max.ru/u/f9LHodD0cOImftilzkCl4kAeStuy19clTRT-OfiR8N3evEhlv8ZSIie6VrY"
+                target="_blank"
+                rel="noopener"
+                onclick="window.ym&&ym(109329838,'reachGoal','max_click')"
+              >MAX</a>
+            </div>
+          </div>
         </form>
       </section>
     </main>

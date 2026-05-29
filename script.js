@@ -1,6 +1,7 @@
 const header = document.querySelector(".site-header");
 const counters = document.querySelectorAll(".counter");
 const caseCounters = document.querySelectorAll(".case-counter");
+const contactForm = document.querySelector("[data-contact-form]");
 
 // UTM-метки сохраняются в браузере, чтобы позже передавать источник заявки в форму, CRM или аналитику.
 const utmParams = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
@@ -140,6 +141,72 @@ document.querySelectorAll("[data-slider]").forEach(initCaseSlider);
 
 if (!document.querySelector("[data-slider]") && caseCounters.length) {
   caseCounters.forEach(runCounter);
+}
+
+if (contactForm) {
+  const submitButton = contactForm.querySelector("[data-form-submit]");
+  const status = contactForm.querySelector("[data-form-status]");
+  const defaultButtonText = submitButton?.textContent || "Оставить заявку";
+
+  const setFormStatus = (message, type) => {
+    if (!status) return;
+
+    status.textContent = message;
+    status.dataset.status = type;
+  };
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const payload = {
+      name: String(formData.get("name") || "").trim(),
+      contact: String(formData.get("contact") || "").trim(),
+      message: String(formData.get("message") || "").trim(),
+      page: window.location.href,
+    };
+
+    try {
+      payload.utm = JSON.parse(sessionStorage.getItem("levonwb_utm") || "{}");
+    } catch {
+      payload.utm = {};
+    }
+
+    if (!payload.name || !payload.contact || !payload.message) {
+      setFormStatus("Заполните имя, контакт и короткое описание проекта.", "error");
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Отправляю...";
+    setFormStatus("", "");
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      setFormStatus("Спасибо! Заявка отправлена, я скоро свяжусь с вами.", "success");
+      contactForm.reset();
+
+      if (typeof window.ym === "function") {
+        window.ym(109329838, "reachGoal", "form_submit");
+      }
+    } catch {
+      setFormStatus("Не удалось отправить заявку. Напишите мне напрямую в Telegram.", "error");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = defaultButtonText;
+    }
+  });
 }
 
 const lightbox = document.querySelector("[data-lightbox]");
