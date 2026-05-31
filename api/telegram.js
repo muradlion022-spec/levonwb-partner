@@ -44,23 +44,26 @@ const formatUtm = (utm = {}) => {
   return labels.map(([label, key]) => `${label}: ${formatUtmValue(utm[key])}`).join("\n");
 };
 
-const buildTelegramMessage = ({ name, contact, message, page, utm }) =>
+const buildTelegramMessage = ({ interest, name, contact, message, page, utm }) =>
   [
-    "🔥 Новая заявка",
+    "🔥 Новая заявка с сайта",
     "",
-    "👤 Имя",
+    "🎯 Тип обращения:",
+    sanitize(interest),
+    "",
+    "👤 Имя:",
     sanitize(name),
     "",
-    "📱 Контакт",
+    "📱 Контакт:",
     sanitize(contact),
     "",
-    "📦 Проект",
+    "📦 Проект:",
     sanitize(message),
     "",
-    "📍 Источник",
+    "🌐 Страница:",
     sanitize(page),
     "",
-    "UTM-метки:",
+    "📍 Источник:",
     formatUtm(utm),
   ].join("\n");
 
@@ -87,11 +90,12 @@ module.exports = async function telegramHandler(req, res) {
     return;
   }
 
+  const interest = sanitize(payload.interest);
   const name = sanitize(payload.name);
   const contact = sanitize(payload.contact);
   const message = sanitize(payload.message);
 
-  if (!name || !contact || !message) {
+  if (!interest || !name || !contact || !message) {
     sendJson(res, 400, { ok: false, error: "Required fields are missing" });
     return;
   }
@@ -105,6 +109,7 @@ module.exports = async function telegramHandler(req, res) {
       body: JSON.stringify({
         chat_id: chatId,
         text: buildTelegramMessage({
+          interest,
           name,
           contact,
           message,

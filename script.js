@@ -160,6 +160,7 @@ if (contactForm) {
 
     const formData = new FormData(contactForm);
     const payload = {
+      interest: String(formData.get("interest") || "").trim(),
       name: String(formData.get("name") || "").trim(),
       contact: String(formData.get("contact") || "").trim(),
       message: String(formData.get("message") || "").trim(),
@@ -172,8 +173,8 @@ if (contactForm) {
       payload.utm = {};
     }
 
-    if (!payload.name || !payload.contact || !payload.message) {
-      setFormStatus("Заполните имя, контакт и короткое описание проекта.", "error");
+    if (!payload.interest || !payload.name || !payload.contact || !payload.message) {
+      setFormStatus("Выберите интерес и заполните имя, контакт и короткое описание проекта.", "error");
       return;
     }
 

@@ -2,7 +2,7 @@
   "name": "levonwb-partner",
   "version": "1.0.0",
   "private": true,
-  "description": "Премиальный лендинг операционного партнера Wildberries для запуска рекламы.",
+  "description": "Премиальный лендинг консультанта по росту чистой прибыли магазина Wildberries.",
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",

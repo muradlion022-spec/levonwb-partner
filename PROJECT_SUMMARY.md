@@ -4,6 +4,516 @@ Last updated: 2026-05-20
 
 This file is the persistent working summary for the project. Do not delete information from it when continuing the project. When the project changes, append or update it with the new facts so the site can be continued in a new chat without losing context.
 
+## Update: 2026-05-30 — Final Profit Positioning
+
+The landing page was strategically repositioned from "looking for partners" / generic Wildberries services toward a stronger business value:
+
+`Левон Степанян помогает магазинам Wildberries находить точки потерь, увеличивать чистую прибыль и доводить изменения до измеримого результата.`
+
+Main idea now:
+
+- advertising, SEO, cards, analytics, and sales are not sold as separate isolated services;
+- they are tools inside a broader operational profit-management process;
+- the main value is finding where the WB store loses money, prioritizing the strongest profit levers, helping implement changes, and controlling the result.
+
+Current header brand:
+
+`Левон Степанян | Рост прибыли на Wildberries`
+
+Current hero headline:
+
+`Помогаю магазинам Wildberries увеличивать чистую прибыль, а не просто обороты`
+
+Current hero subheadline:
+
+`Анализирую экономику бизнеса, рекламу, логистику и операционные процессы. Нахожу точки потерь и помогаю внедрять решения, которые дают измеримый финансовый результат.`
+
+Hero tags:
+
+- `Поиск потерь`
+- `Экономика магазина`
+- `Оптимизация расходов`
+- `Рост чистой прибыли`
+
+Hero buttons:
+
+- primary: `Получить аудит магазина` — scrolls to contact/form block;
+- secondary: `Написать в Telegram` — opens `https://t.me/levon_stepanian`.
+
+Compact trust block now contains only:
+
+- `5+ лет` / `на Wildberries`
+- `90+ млн ₽` / `заказов за 3 месяца в одном из проектов`
+- `От аналитики` / `до внедрения и роста прибыли`
+
+The old visual stats section with:
+
+- `10+ прибыльных проектов`
+- `1.000+ протестированных гипотез`
+- `100 млн оборот`
+
+was removed from the visible page.
+
+Pain block is now:
+
+Title:
+
+`Рост оборота не всегда означает рост прибыли`
+
+Subtitle:
+
+`Большинство потерь скрыто внутри бизнеса: в рекламе, логистике, упаковке, налогах, экономике товара и операционных процессах.`
+
+Pain cards:
+
+- `Оборот растёт, а чистой прибыли почти нет`
+- `Не понимаю, куда уходят деньги`
+- `Реклама работает, но маржа падает`
+- `Логистика и упаковка съедают прибыль`
+- `Есть продажи, но нет системы роста`
+- `Боюсь запускать новый товар и потерять деньги`
+
+New diagnostic mini-section added after pain block:
+
+`Где обычно теряются деньги`
+
+Cards:
+
+- `Реклама` — `ДРР растет, а прибыль не увеличивается.`
+- `Логистика` — `Товар катается туда-обратно, выкуп низкий, расходы растут.`
+- `Упаковка и габариты` — `Незаметные сантиметры превращаются в лишние расходы.`
+- `Экономика товара` — `Себестоимость, налоги, комиссии и доставка съедают маржу.`
+
+Main audit block:
+
+Title:
+
+`Аудит и увеличение прибыли магазина Wildberries`
+
+Text:
+
+`Проверяю не только рекламу и карточки. Анализирую всю экономику проекта и нахожу точки потерь, которые мешают бизнесу зарабатывать больше.`
+
+Process:
+
+`Диагностика → Поиск потерь → План действий → Внедрение → Контроль результата`
+
+Checklist:
+
+- `экономику товара и маржинальность`
+- `рекламу и ДРР`
+- `логистику`
+- `упаковку и габариты`
+- `налоги и дополнительные расходы`
+- `процент выкупа`
+- `карточки и конверсию`
+- `остатки и склады`
+
+Added explanatory audit note:
+
+`Часто деньги теряются не в одном месте, а сразу в нескольких. Моя задача — найти приоритетные точки роста и показать, какие действия дадут максимальный финансовый эффект.`
+
+Main audit CTA:
+
+`Обсудить аудит`
+
+Directions after audit:
+
+1. `Внедрение и контроль результата`
+
+Text:
+
+`После аудита не оставляю вас с отчетом. Помогаю внедрить изменения, контролировать показатели и доводить решения до измеримого результата.`
+
+2. `Запуск магазина с нуля`
+
+Text:
+
+`Для тех, кто хочет выйти на Wildberries без дорогостоящих ошибок. Помогаю пройти путь от идеи и выбора товара до первых продаж и анализа результатов.`
+
+Launch block bullets:
+
+- `только планируете выход на Wildberries`
+- `не хотите терять деньги на типовых ошибках`
+- `хотите получить понятный план запуска`
+- `нужен опытный наставник на старте`
+
+Education is now a separate full section:
+
+Title:
+
+`Обучение управлению прибыльным магазином Wildberries`
+
+Text:
+
+`Обучение строится на реальных проектах и цифрах. Без теории ради теории. Показываю, как работать с аналитикой, рекламой, карточками, экономикой и управлением магазином.`
+
+Suitable for:
+
+- `начинающим менеджерам Wildberries`
+- `действующим менеджерам`
+- `начинающим селлерам`
+- `владельцам магазинов`
+
+Topics:
+
+- `аналитика`
+- `реклама`
+- `SEO и карточки`
+- `увеличение продаж`
+- `экономика магазина`
+- `поиск точек роста`
+- `операционное управление`
+
+Results/cases block preserved. Current semantic emphasis:
+
+`Комплексная работа: продажи, расходы, экономика и чистая прибыль.`
+
+Existing case remains with screenshots and lightbox. Placeholder for second case remains:
+
+- `От запуска до 6,5 млн ₽ за месяц`
+- `Кейс в подготовке — добавлю после закрытия месяца.`
+
+Partnership block was visually separated as premium/closed format:
+
+Kicker:
+
+`Партнерство`
+
+Title:
+
+`Рассматриваю ограниченное количество проектов для долгосрочного сотрудничества`
+
+Text:
+
+`В отдельных проектах могу участвовать не только как консультант, а как операционный партнер: помогать внедрять решения, выстраивать процессы и участвовать в развитии бизнеса.`
+
+Subtitle:
+
+`Это формат не для разовой консультации, а для проектов, где есть потенциал системного роста.`
+
+Suitable if:
+
+- `действующий магазин на Wildberries`
+- `собственное производство`
+- `крупный опт или поставки`
+- `товарная линейка с потенциалом масштабирования`
+- `желание строить системный бизнес, а не искать разовые решения`
+
+CTA:
+
+`Обсудить партнерство`
+
+Form dropdown options now:
+
+- `Аудит магазина`
+- `Внедрение и сопровождение`
+- `Запуск магазина с нуля`
+- `Обучение и наставничество`
+- `Партнерство`
+
+Telegram notification now starts with:
+
+`🎯 Тип обращения:`
+
+and still includes:
+
+- name;
+- contact;
+- project;
+- current page;
+- UTM source, medium, campaign, and content;
+- missing UTM values as `не передан`.
+
+Current contact links:
+
+- Telegram: `https://t.me/levon_stepanian`
+- WhatsApp: `https://wa.me/79283222448`
+- MAX: `https://max.ru/u/f9LHodD0cOImftilzkCl4kAeStuy19clTRT-OfiR8N3evEhlv8ZSIie6VrY`
+- Instagram: `https://www.instagram.com/spartanec_wb?igsh=ZTFmcDhta284ZXRy&utm_source=qr`
+- Phone: `tel:+79283222448`
+
+Yandex Metrica goals preserved:
+
+- `telegram_click`
+- `whatsapp_click`
+- `max_click`
+- `instagram_click`
+- `form_submit`
+
+Files changed in this update:
+
+- `index.html` — final profit positioning, new texts, new diagnostic section, updated service/audit/education/partnership/form content, updated OG site name.
+- `styles.css` — visual styling for hero tags, diagnostic leak cards, audit note, launch bullets, education section, and premium partnership block; responsive behavior for new blocks.
+- `api/telegram.js` — Telegram notification label changed to `Тип обращения`.
+- `package.json` — project description updated to reflect the profit-consulting positioning.
+- `PROJECT_SUMMARY.md` — this detailed update section.
+
+Verification performed in this update:
+
+- `node --check script.js` passed.
+- `node --check api/telegram.js` passed.
+- `node --check server.js` passed.
+- static asset path check found no missing referenced local files.
+- direct Node build command passed: `Static landing is ready for Vercel`.
+- Telegram handler mock test passed and produced the expected UTM-aware notification with `Тип обращения`.
+- in-app browser check confirmed current hero/header texts, 4 hero tags, 3 trust cards, 6 pain cards, 4 diagnostic cards, 8 audit checklist items, education section, 7 education tags, no visible old stats panel, no mailto contact links, and no horizontal overflow at desktop width.
+- result screenshot lightbox opens, shows the original screenshot, and next-month navigation works.
+
+Known environment note:
+
+`npm run build` could not be executed in the current shell because `npm` was not available in PATH. The underlying build command from `package.json` was executed directly with `node` and passed. On Vercel/GitHub, npm should be available normally.
+
+## Update: 2026-05-31 — Concrete Service Block Visual System
+
+The user requested that vague instructions such as "make it premium" or "show as cards" should not be used without a concrete visual pattern. The site was updated so every service block has a clearly defined layout and visual logic.
+
+### Audit Block
+
+The audit section is still the main offer:
+
+`Аудит и увеличение прибыли магазина Wildberries`
+
+The audit block now contains four concrete parts:
+
+1. `Кому подходит`
+
+Implemented as a pure checklist, not cards.
+
+Visual rule:
+
+- each item is a horizontal row;
+- red check icon `✔` in color `#C41E3A`;
+- text on the right;
+- no card backgrounds around individual items.
+
+Checklist items:
+
+- `Оборот растет, а прибыль нет`
+- `Много рекламы, но денег остается мало`
+- `Не понимаете, где теряется маржа`
+- `Хотите масштабироваться без потери прибыли`
+- `Продажи есть, но бизнес работает нестабильно`
+
+2. `Что входит в аудит`
+
+Replaced old small capsule list with large cards.
+
+Desktop:
+
+- 2 columns.
+
+Mobile/tablet:
+
+- 1 column.
+
+Cards:
+
+- `📊 Экономика и прибыль` — `Проверяю маржинальность, себестоимость, unit-экономику и чистую прибыль.`
+- `📢 Реклама` — `Анализирую ДРР, рекламные расходы и эффективность рекламных кампаний.`
+- `🚚 Логистика` — `Проверяю склады, остатки, упаковку и влияние логистики на прибыль.`
+- `📈 Карточки товаров` — `Анализирую CTR, конверсию, процент выкупа и точки роста.`
+- `⚙ Операционные процессы` — `Проверяю дополнительные расходы, налоги и внутренние процессы.`
+
+3. `Как проходит работа`
+
+This is now part of the audit section, not a separate page section.
+
+Desktop:
+
+- horizontal roadmap: `01 → 02 → 03 → 04 → 05`;
+- thin red line behind steps;
+- each step has number, title, and one sentence.
+
+Mobile/tablet:
+
+- vertical roadmap;
+- red vertical line;
+- steps stacked as `01 ↓ 02 ↓ 03 ↓ 04 ↓ 05`.
+
+Audit steps:
+
+- `01 Диагностика` — `Собираем исходные цифры магазина и фиксируем текущую картину.`
+- `02 Поиск потерь` — `Нахожу, где реклама, логистика, налоги и процессы съедают прибыль.`
+- `03 План действий` — `Расставляю приоритеты и показываю, что даст максимальный эффект.`
+- `04 Внедрение` — `Помогаю внедрить решения или сопровождаю вашу команду.`
+- `05 Контроль результата` — `Смотрим динамику прибыли, расходов и масштабируем рабочие решения.`
+
+4. `После аудита вы получаете`
+
+Implemented as result cards with light green background.
+
+Cards:
+
+- `список точек потерь`
+- `план действий`
+- `финансовые ориентиры`
+- `рекомендации по увеличению прибыли`
+
+### Launch From Zero Block
+
+The previous "Запуск магазина с нуля" card was turned into a separate full section with the same visual logic as the audit block.
+
+Section ID:
+
+`#launch`
+
+Title:
+
+`Запуск магазина Wildberries с нуля`
+
+Text:
+
+`Для тех, кто хочет выйти на Wildberries без дорогостоящих ошибок. Помогаю пройти путь от идеи и выбора товара до первых продаж и анализа результатов.`
+
+Structure:
+
+1. `Кому подходит` — checklist.
+2. `Что входит` — large cards.
+3. `Как проходит работа` — roadmap.
+4. `Что получает клиент` — green result cards.
+
+Launch checklist:
+
+- `Только планируете выход на Wildberries`
+- `Не хотите терять деньги на типовых ошибках`
+- `Хотите заранее понять экономику запуска`
+- `Нужен понятный план первых действий`
+- `Нужен опытный наставник на старте`
+
+Launch cards:
+
+- `📦 Товар и ниша`
+- `📊 Экономика запуска`
+- `🧾 Карточка товара`
+- `📢 Первые продажи`
+
+Launch roadmap:
+
+- `01 Разбор идеи`
+- `02 Расчет экономики`
+- `03 Подготовка запуска`
+- `04 Старт продаж`
+- `05 Анализ результата`
+
+Launch result cards:
+
+- `план запуска`
+- `расчет экономики`
+- `структуру карточки`
+- `первые гипотезы роста`
+
+### Education Block
+
+Education remains a separate section but now follows the same structured pattern.
+
+Title:
+
+`Обучение управлению прибыльным магазином Wildberries`
+
+Structure:
+
+1. `Кому подходит` — checklist.
+2. `Что изучаем` — large cards.
+3. `Как проходит обучение` — roadmap.
+4. `Что получает клиент` — green result cards.
+
+Study cards:
+
+- `📊 Аналитика`
+- `📢 Реклама`
+- `📦 Экономика`
+- `🔍 SEO`
+- `📈 Управление прибылью`
+- `🚀 Масштабирование`
+
+Education result cards:
+
+- `понимание экономики WB`
+- `навык работы с аналитикой`
+- `систему принятия решений`
+- `план развития навыков`
+
+### Separate "How Work Goes" Section Removed
+
+The old standalone section:
+
+`#approach`
+
+was removed because the user requested "Как проходит работа" to be part of the audit block rather than a separate site section.
+
+Header navigation was updated:
+
+- `Аудит` → `#services`
+- `Запуск` → `#launch`
+- `Обучение` → `#education`
+- `Результаты` → `#results`
+- `Партнерство` → `#partnership`
+- `Контакты` → `#contact`
+
+### Partnership Block Upgrade
+
+The partnership block was made the most visually distinct section.
+
+Visual implementation:
+
+- dark graphite background;
+- soft golden radial glow at the edges;
+- very slow background animation;
+- separate premium card with gold border;
+- hover state slightly increases glow;
+- no neon or acidic effects.
+
+Scarcity/accent element added:
+
+`✦ Рассматриваю ограниченное количество проектов для долгосрочного сотрудничества.`
+
+This appears as a separate larger accent element before the main heading.
+
+Partnership heading changed to:
+
+`Формат операционного партнерства для проектов с потенциалом роста`
+
+Partnership button changed to:
+
+`Подать заявку на партнерство`
+
+Button visual:
+
+- gold gradient from dark gold to light gold;
+- subtle left-to-right shine on hover;
+- no aggressive animation.
+
+### Files changed in this update
+
+- `index.html` — restructured audit, launch, education, and partnership sections; removed separate `#approach` section; updated navigation.
+- `styles.css` — added concrete visual systems for checklists, 2-column cards, roadmaps, green result cards, launch/education sections, and premium animated partnership block.
+- `PROJECT_SUMMARY.md` — this update entry.
+
+### Verification performed
+
+- `node --check script.js` passed.
+- `node --check api/telegram.js` passed.
+- `node --check server.js` passed.
+- local asset path check found no missing referenced files.
+- direct Node build command passed: `Static landing is ready for Vercel`.
+- Telegram handler mock still returns success and preserves `Тип обращения`.
+- browser DOM check confirmed:
+  - audit checklist has 5 items;
+  - audit cards count is 5;
+  - audit roadmap has 5 steps;
+  - audit result cards count is 4;
+  - launch section exists;
+  - launch checklist has 5 items;
+  - launch cards count is 4;
+  - launch roadmap has 5 steps;
+  - launch result cards count is 4;
+  - education study cards count is 6;
+  - education roadmap has 5 steps;
+  - old `#approach` section is removed;
+  - partnership button text is `Подать заявку на партнерство`;
+  - no horizontal overflow was detected in the in-app browser check.
+
 ## Project Location
 
 Workspace:
@@ -1301,3 +1811,158 @@ Verification for this update:
 - browser check at 390 and 1280 widths found no horizontal overflow;
 - browser console errors: none found during check;
 - Telegram notification mock returned `200 {"ok":true}` with the new readable format.
+
+### Strategic Landing Rebuild - 2026-05-30
+
+User changed the sales strategy of the landing page.
+
+New main idea:
+
+- not “looking for partners”;
+- now the core offer is helping Wildberries sellers find profit growth points, remove money leaks, and implement changes until a measurable result.
+
+Partnership remains, but is now a separate premium block lower on the page, not the main hero offer.
+
+Implemented in `index.html`:
+
+- Hero headline changed to:
+  `Помогаю селлерам Wildberries находить точки роста прибыли и масштабировать бизнес`
+- Hero subheading changed to:
+  `Анализирую экономику, рекламу, логистику и процессы магазина. Не просто нахожу проблемы — помогаю внедрить изменения и довести их до результата.`
+- Hero primary CTA:
+  `Получить аудит магазина` -> `#contact`
+- Hero secondary CTA:
+  `Написать в Telegram`
+- Hero quick contacts remain:
+  - Telegram;
+  - WhatsApp;
+  - MAX;
+  - Instagram.
+- Header nav now scrolls to one-page sections:
+  - `Аудит`;
+  - `Этапы`;
+  - `Результаты`;
+  - `Партнерство`;
+  - `Контакты`.
+- Header CTA changed to:
+  `Получить аудит`.
+- Hero trust cards updated:
+  - `5+ лет` / `на Wildberries`;
+  - `90+ млн ₽` / `заказов за 3 месяца в одном из проектов`;
+  - `От аналитики` / `до внедрения и роста прибыли`.
+- Added pain block:
+  - `Оборот растёт, а чистой прибыли почти нет`;
+  - `Не понимаю, куда уходят деньги`;
+  - `Реклама работает, но маржа падает`;
+  - `Логистика и упаковка съедают прибыль`;
+  - `Есть продажи, но нет системы роста`;
+  - `Боюсь запускать новый товар и потерять деньги`.
+- Rebuilt services block around the main offer:
+  `Аудит и увеличение прибыли магазина Wildberries`.
+- Audit path:
+  `Диагностика → Поиск потерь → План действий → Внедрение → Контроль результата`.
+- Audit checklist:
+  - economy;
+  - ads and DRR;
+  - logistics;
+  - packaging and dimensions;
+  - taxes and expenses;
+  - buyout rate;
+  - cards and conversion;
+  - stock and warehouses.
+- Added additional directions:
+  - `Сопровождение после аудита`;
+  - `Запуск магазина с нуля`;
+  - `Практическое обучение и наставничество`.
+- Results section kept existing screenshots/lightbox and current case logic.
+- Results copy changed so the case reads as complex work:
+  - sales growth;
+  - expense optimization;
+  - economic improvement;
+  - net profit growth.
+- Added placeholder for second case:
+  `От запуска до 6,5 млн ₽ за месяц`
+  with text:
+  `Кейс в подготовке — добавлю после закрытия месяца.`
+- Added work process block:
+  - `Знакомство`;
+  - `Аудит`;
+  - `План действий`;
+  - `Внедрение`;
+  - `Контроль результата`.
+- Added premium partnership block:
+  `Рассматриваю ограниченное количество проектов для долгосрочного партнёрства`.
+- Partnership wording avoids phrase `сильный товар`.
+- Uses approved wording:
+  `товарная линейка с потенциалом масштабирования`.
+- Contact section updated:
+  - visual email removed;
+  - contact links now show Telegram, WhatsApp, MAX, Instagram, phone;
+  - form still sends through `/api/telegram`.
+- Form now includes required select:
+  `Что вас интересует?`
+  with options:
+  - `Аудит магазина`;
+  - `Увеличение прибыли и сопровождение`;
+  - `Запуск магазина с нуля`;
+  - `Обучение / наставничество`;
+  - `Партнёрство`;
+  - `Другое`.
+
+Implemented in `script.js`:
+
+- form payload now includes `interest`;
+- validation requires interest, name, contact, and project description;
+- existing UTM capture remains unchanged;
+- `form_submit` Yandex Metrica goal remains on successful form submission.
+
+Implemented in `api/telegram.js`:
+
+- Telegram notification format changed to:
+  - `🔥 Новая заявка с сайта`;
+  - `🎯 Интерес:`;
+  - `👤 Имя:`;
+  - `📱 Контакт:`;
+  - `📦 Проект:`;
+  - `🌐 Страница:`;
+  - `📍 Источник:`;
+  - readable UTM values:
+    - `Источник`;
+    - `Канал`;
+    - `Кампания`;
+    - `Контент`;
+  - missing UTM values show `не передан`.
+- Environment variable names remain unchanged:
+  - `TELEGRAM_BOT_TOKEN`;
+  - `TELEGRAM_CHAT_ID`.
+
+Implemented in `styles.css`:
+
+- dark premium pain cards;
+- audit offer panel;
+- audit flow and checklist chips;
+- responsive direction cards;
+- five-step workflow;
+- premium partnership block;
+- select input styling;
+- case placeholder styling;
+- mobile adaptations for 390px and desktop.
+
+Verification:
+
+- `node --check script.js` passed;
+- `node --check api/telegram.js` passed;
+- `node --check server.js` passed;
+- mocked Telegram request returned `200 {"ok":true}` with the new notification format;
+- browser check at 390px showed no horizontal overflow;
+- browser check at 1280px showed no horizontal overflow;
+- console errors: none found during browser checks;
+- Vercel build command prints `Static landing is ready for Vercel`.
+
+Files changed:
+
+- `index.html`;
+- `styles.css`;
+- `script.js`;
+- `api/telegram.js`;
+- `PROJECT_SUMMARY.md`.
